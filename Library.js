@@ -46,12 +46,11 @@ app.controller("videocontroller",["$scope",function($scope) {
 
         var myId = getId(str);
 
-        var myCode = '"https://www.youtube.com/embed/'+ myId + '"';
+        var myCode = '"//www.youtube.com/embed/'+ myId + '"';
 
 
 
 
-alert(myCode)
 
         $scope.myLibrary[video_count] = myCode;
         video_count++;
