@@ -19,7 +19,7 @@ app.config(function($routeProvider) {
 
 
 
-app.controller("videocontroller",["$scope",function($scope,$sce) {
+app.controller("videocontroller",["$scope","$sce",function($scope,$sce) {
 
 
     var video_count = 0;
@@ -48,9 +48,9 @@ app.controller("videocontroller",["$scope",function($scope,$sce) {
 
         $scope.myCode = '"//www.youtube.com/embed/'+ myId + '"';
 
-          $scope.mycode= $sce.trustAsResourceUrl($scope.myCode)
+          $scope.mycode= $sce.trustAsResourceUrl($scope.myCode);
 
-alert("gdf");
+
 
         $scope.myLibrary[video_count] = $scope.myCode;
         video_count++;
