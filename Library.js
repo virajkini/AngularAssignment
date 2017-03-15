@@ -50,7 +50,7 @@ app.controller("videocontroller",["$scope",function($scope,$sce) {
 
           $scope.mycode= $sce.trustAsResourceUrl($scope.myCode)
 
-
+alert("gdf");
 
         $scope.myLibrary[video_count] = $scope.myCode;
         video_count++;
