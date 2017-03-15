@@ -24,21 +24,19 @@ app.controller("controller", function ($scope) {
 
     var video_count = 0;
 
-
+    $scope.videos=[];
     $scope.add = function() {
 
-        $scope.videos = [
-
-            {
-                "url": "https://www.youtube.com/watch?v=6vE0oFFSE7c",
-                "date": "2016-05-11"
-            }
-        ];
-
-console.log($scope.video_url)
 
 
-        $scope.videos[video_count].url = $scope.video_url;
+
+
+
+        $scope.videos[video_count] = {"url":$scope.video_url}
+
+        video_count++
+
+
     }
 });
 
